@@ -21,7 +21,7 @@ Teams.init({
   underscored: true,
   sequelize: db,
   timestamps: false,
-  tableName: 'teams',
+  modelName: 'teams',
 });
 
 export default Teams;
