@@ -43,6 +43,24 @@ Matches.init({
   sequelize: db,
   timestamps: false,
   modelName: 'matches',
+  scopes: {
+    all: { include: [
+      { model: Teams, as: 'teamAway', attributes: { exclude: ['id'] } },
+      { model: Teams, as: 'teamHome', attributes: { exclude: ['id'] } },
+    ] },
+    inProgress: { where: { inProgress: true },
+      include: [
+        { model: Teams, as: 'teamAway', attributes: { exclude: ['id'] } },
+        { model: Teams, as: 'teamHome', attributes: { exclude: ['id'] } },
+      ] },
+    finished: { where: { inProgress: false },
+      include: [
+        { model: Teams, as: 'teamAway', attributes: { exclude: ['id'] } },
+        { model: Teams, as: 'teamHome', attributes: { exclude: ['id'] } },
+      ] },
+    homeLeaderboard: { where: { inProgress: false },
+    },
+  },
 });
 
 Matches.belongsTo(Teams, { foreignKey: 'homeTeam', as: 'teamHome' });
