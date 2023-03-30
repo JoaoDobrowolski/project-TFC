@@ -1,6 +1,6 @@
 # Trybe-Futebol-Clube
 
-Neste projeto Back-End (Front-End foi realizado pela Trybe) foi desenvolvido um site informativo sobre partidas e classificações de futebol:
+Neste projeto Back-End (Front-End foi realizado pela <a href="https://www.betrybe.com/" target="_blank">Trybe</a>) foi desenvolvido um site informativo sobre partidas e classificações de futebol:
 
 -----
 
@@ -30,11 +30,16 @@ Configurações mínimas para execução do projeto:
 
 # Uso
 
-Para iniciar o projeto, execute o seguinte comando no terminal:
+Comando para popular o banco de dados (na pasta Back-End):
+`npm run db:reset`
+
+Para iniciar o projeto, execute o seguinte comando no terminal na pasta raiz:
 
 `npm run compose:up`
 
-Isso iniciará a aplicação em modo de desenvolvimento. Abra http://localhost:3000 para visualizá-la no navegador.
+Isso iniciará a aplicação. Abra http://localhost:3000 para visualizá-la no navegador.
+
+As portas usadas para o Front-End e Back-End são, respectivamente, 3000 e 3001.
 
 -----
 
@@ -56,4 +61,4 @@ Etapas a seguir para contribuir com o projeto:
 
 # Autor
 
-A parte de Back-End do projeto TFC foi desenvolvido por João Felipe Dobrowolski durante o curso da Trybe.
+A parte de Back-End do projeto TFC foi desenvolvido por João Felipe Dobrowolski durante o curso da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
