@@ -1,6 +1,6 @@
 # Trybe-Futebol-Clube
 
-Neste projeto Back-End (Front-End foi realizado pela <a href="https://www.betrybe.com/" target="_blank">Trybe</a>) foi desenvolvido um site informativo sobre partidas e classificações de futebol:
+Neste projeto Back-End (Front-End foi realizado pela <a href="https://www.betrybe.com/" target="_blank">Trybe</a>) foi desenvolvido um site informativo sobre partidas e classificações de futebol, juntamente com uma seção de login.
 
 -----
 
@@ -17,20 +17,21 @@ O projeto foi realizado com o intuito de desenvolver e aperfeiçoar as habilidad
 
 Para instalar as dependências, execute o seguinte comando no terminal dentro da pasta raiz:
 
-`npm install`
+`npm install` ou `npm run install:apps`
 
 Configurações mínimas para execução do projeto:
 
- - Sistema Operacional Distribuição Unix
- - Node versão 16
- - Docker
- - Docker-compose versão >=1.29.2
+ - Sistema Operacional Distribuição Unix;
+ - Node versão 16;
+ - Docker;
+ - Docker-compose versão >=1.29.2.
 
 -----
 
 # Uso
 
 Comando para popular o banco de dados (na pasta Back-End):
+
 `npm run db:reset`
 
 Para iniciar o projeto, execute o seguinte comando no terminal na pasta raiz:
